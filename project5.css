@@ -1,0 +1,47 @@
+body{   
+    background-image :url(imagesD56KN882.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    color : white;
+}
+
+header h1{
+    font-weight : 600;
+    margin-bottom: 0;
+}
+
+header p{
+    font-weight : 700;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+form{
+    max-width: 700px;
+    margin : 0 auto; /* we center the form element */   
+}
+
+fieldset{
+    max-width: 600px;
+    margin : 0 auto; /* we center the form element */   
+    font-size: 20px;
+    background-color: lightgrey;
+}
+
+#name, #email, #submit, #number, #dropdown{
+    margin-top: 5px;
+    width : 570px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#submit{
+    width : 570px;
+    height: 40px;
+    background-color: lightblue;
+}

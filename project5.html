@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <title>Survey form</title>
+            <link rel="stylesheet" href="project5.css">
+        
+        </head>
+        <body>
+            <header>
+                <h1 id = "title">Survey form for web developers</h1>
+                <p id = "description">This is a short survey about the journey of web developers</p>
+            </header>
+            <article>
+                <form id = "survey-form">
+                    <!-- fieldset is used to hold related data in a form -->
+                    <fieldset>
+                        <!-- adding the name section -->
+                        <!-- "required" attribute informs the (HTML5-aware) web browser that the field is to be considered mandatory. if the user didn't enter a value, into the box then the browser will display an error message -->
+                        <label for = "name" id ="name-label">Name (first and last)</label><br>
+                        <textarea rows = "2" cols = "80" id = "name" placeholder="Enter your name" required></textarea><br><br>
+                        
+                        <!-- adding the email section -->
+                        <label for = "email" id ="email-label">Email</label><br>
+                        <!-- we want to only accept email address's type in this input. it'll display a message if the input wasn't an email type -->
+                        <input type="email" id = "email" placeholder="Enter your email" required><br><br>
+                        
+                        <!-- adding the age section -->
+                        <lable for = "number" id = "number-label">Age (optional)</lable><br>
+                        <input type = "number" id = "number" placeholder="Enter your age" min = 10 max = 99><br><br>
+                        
+                        <!-- adding a dropdown section -->
+                        <label>What type of web developer are you?</label><br>
+                        <select id = "dropdown">
+                        <option>Front end web developer</option>
+                        <option>Back end web developer</option>
+                        <option>Full stack web developer</option>
+                        </select>
+                        <br><br>
+                        
+                        <!-- adding radio buttons -->
+                        <label>Would you recommend web development to a friend?</label><br>
+                        <!-- since the radio buttons have thesame name, we can only choose one. Note: The value attribute defines the unique value associated with each radio button. The value is not shown to the user, but is the value that is sent to the server on "submit" to identify which radio button that was selected.
+                        --> 
+                        <input type = "radio" name = "radioButton" value = "definitely">
+                        <label>Definitely</label>
+                        <br>
+                        <input type = "radio" name = "radioButton" value = "maybe">
+                        <label>MayBe</label>
+                        <br>
+                        <input type = "radio" name = "radioButton" value = "not sure">
+                        <label>Not Sure</label>
+                        <br><br>
+                        
+                        <!-- adding degree section -->
+                        <label for = "typeOfDeveloper">What type of web developer are you?</label>
+                        <br>
+                        <input type = "radio" name = "typeOfDeveloper" id = "typeOfDeveloper">Self-taught developer
+                        <br>
+                        <input type = "radio" name = "typeOfDeveloper" id = "typeOfDeveloper">Degree holding developer               
+                        <br><br>
+                        
+                        <!-- adding check boxex -->
+                        <label>Check the technologies you're comfortable with (select all that apply)</label>
+                        <br>
+                        <!-- since the checkboxes are related, they've thesame name -->
+                        <label for = "html">
+                            <input type = "checkbox" name = "web-design" id = "html" value = "html">HTML
+                        </label><br>
+                        
+                        <label for = "css">
+                            <input type = "checkbox" name = "web-design" id = "css" value = "css">CSS
+                        </label><br>
+                        
+                        <label for = "javascript">
+                            <input type = "checkbox" name = "web-design" id = "javaxript" value = "javascript">JavaScript
+                        </label><br>
+                        
+                        <label for = "jquery">
+                            <input type = "checkbox" name = "web-design" id = "jquery" id value = "jquery">jQuery
+                        </label><br>
+                        
+                        <label for = "react">
+                            <input type = "checkbox" name = "web-design" id = "react" value = "react">React
+                        </label><br>
+                        
+                        <label for = "php">
+                            <input type = "checkbox" name = "web-design" id = "php" value = "php">PHP
+                        </label><br>
+                        
+                        <label for = "ruby">
+                            <input type = "checkbox" name = "web-design" id = "ruby" value = "ruby">Ruby
+                        </label><br>
+                        
+                        <label for = "python">
+                            <input type = "checkbox" name = "web-design" id = "python" value = "python">Python
+                        </label><br>
+                        
+                        <label for = "java">
+                            <input type = "checkbox" name = "web-design" id = "java" value = "java">Java
+                        </label><br>
+                        
+                        <label for = "c++">
+                            <input type = "checkbox" name = "web-design" id = "c++" value = "c++">C++
+                        </label><br>
+                        
+                        <label for = "c#">
+                            <input type = "checkbox" name = "web-design" id = "c#" value = "c#">C#
+                        </label><br><br>
+                            
+                        <!-- adding the comment box -->   
+                        <label for = "comments">
+                            Kindly share your story on how and why you started web development
+                            <br>
+                            <textarea rows = "7" cols = "70" id = "comments" placeholder="Enter your comments here...">
+                            </textarea>
+                        </label><br><br>
+                        
+                        <!-- adding the submit button -->
+                        <!-- we added a javascript feature that shows the user, thank you for your time when the the user clicks the submit button -->
+                        <input type = "submit" id = "submit" value = "Submit" onclick="alert('Thank you for your time!')">
+                    </fieldset>
+                </form>
+            </article>
+        </body>
+    </html>
